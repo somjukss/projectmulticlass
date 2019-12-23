@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!--
+	Aerial 1.0 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>PaiTratGun</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+	<script src="js/skel.min.js"></script>
+	<script src="js/init.js"></script>
+	<noscript>
+		<link rel="stylesheet" href="css/skel.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-wide.css" />
+		<link rel="stylesheet" href="css/style-noscript.css" />
+	</noscript>
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	<style>
+	ul {
+		list-style-type: none;
+		margin-top:1em;
+	}
+	li {
+		/*float: left;*/
+	}
+	.out {
+		height: 100px;
+		width: 100px;
+		text-align: center;
+		margin: 5px;
+	}
+	.out img {
+		height: 100%;
+		width: 100%;
+	}
+	.in {
+		opacity: 0;
+		transition:all .5s;
+		transform: translateY(150px);
+	}
+	.out:hover .in {
+		opacity: 1;
+		transform: translateY(-20px);
+	}
+</style>
+</head>
+<body class="loading">
+	<div class="background-wrap">
+		<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted" >
+			<source src="css/images/bggg.mp4" type="video/mp4">
+			</video>        
+		</div>
+		<div id="overlay"></div>
+		<div id="main">
+
+			<!-- Header -->
+			<header id="header">
+				<h1><img src="css/images/home.png" width="30%"
+					height="30%"></h1>
+					<p>let's find your desination</p>
+					<nav>
+						<ul >
+							<li class="hover-box out">
+								<a href="Ztravel.html">
+									<img id = "logo" src="css/images/travel.png">
+									<p class="in " style="font-size: 35px;">Travel</p>
+								</a>
+							</li>
+							<li class="hover-box out">
+								<a href="Zhotel.html">
+									<img id = "logo" src="css/images/hotel.png">
+									<p class="in" style="font-size: 35px;">Hotel</p>
+								</a>
+							</li>
+							<li class="hover-box out">
+								<a href="Zfood.html">
+									<img id = "logo" src="css/images/food.png">
+									<p class="in" style="font-size: 35px;">Food</p>
+									</a>
+								</li>
+							<li class="hover-box out">
+								<a href="Zcafe.html">
+									<img id = "logo" src="css/images/cafe.png">
+									<p class="in" style="font-size: 35px;">Cafe</p>
+									</a>
+								</li>
+							<li class="hover-box out">
+								<a href="Zbar.html">
+									<img id = "logo" src="css/images/pub.png" style="width: 70%; height: 80%">
+									<p class="in" style="font-size: 35px; ">Bar</p>
+								</a>
+								</li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+		</div>
+	</body>
+	</html>

@@ -1,0 +1,97 @@
+@font-face{
+    font-family: font1;
+    src: url(../fonts/Nithan.ttf);
+}
+/*Navbar*/
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-bar {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0em 13.5em 0.5em;;
+}
+
+.logo {
+  width: 15%;
+  padding-left: 1em;
+}
+.logo svg {
+  width: 60%;
+  max-width: 150px;
+  min-width: 100px;
+  height: auto;
+}
+.nav-list {
+  display: none;
+  width: 80%;
+}
+@media screen and (min-width: 45em) {
+  .nav-list {
+    display: flex;
+  }
+}
+.nav-list li {
+  width: 25%;
+  justify-content: flex-end;
+  text-align: center;
+}
+.nav-list li a {
+  font-family: font1;
+  font-size: 150%;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.nav-list li a:after {
+  display: block;
+  content: '';
+  padding-bottom: 5px;
+  border-bottom: solid 1px #000000;
+  -webkit-transform: scaleX(0.0001);
+          transform: scaleX(0.0001);
+  transition: -webkit-transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out;
+  -webkit-transform: 350ms ease-in-out;
+}
+.nav-list li a:hover:after {
+  -webkit-transform: scaleX(0.6);
+          transform: scaleX(0.6);
+}
+.nav-list li a p{
+      -webkit-margin-before: 0em !important;
+    -webkit-margin-after: 0em !important;
+}
+/*Navbar*/
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px; 
+  }
+
+.column {
+  margin-right: 1.2em;
+  /*flex: 1;*/
+/*  margin: 2px;
+  padding: 10px;*/
+  &:first-child { margin-left: 0; }
+  &:last-child { margin-right: 0; }
+  
+}
+.tra{
+    width: 25em;
+    height: 15em;
+    transition: transform 0.3s ease-in-out;
+}
+.tra:hover{
+  transform: scale(1.2);
+ }
